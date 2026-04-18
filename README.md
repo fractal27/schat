@@ -8,6 +8,8 @@ Simplest chat webapp that looks good that you could make.
 - 1 .sql file  ( 9 LOC )
 - 1 .html file ( 34 LOC )
 
+demo: chat.fdeb.xyz
+
 ## Getting started
 
 ```sh

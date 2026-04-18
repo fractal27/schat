@@ -48,10 +48,6 @@ func init_db() {
 	}
 }
 
-func HtmlSpecialchars(html string) string {
-	return template.HTMLEscapeString(html)
-}
-
 
 
 func send(w http.ResponseWriter, req *http.Request) {
@@ -66,7 +62,7 @@ func send(w http.ResponseWriter, req *http.Request) {
 	}
 
 	if query.Get("text") == "" {
-		http.Redirect(w, req, fmt.Sprintf("/?nickname=%s", HtmlSpecialchars(nickname)), http.StatusSeeOther);
+		http.Redirect(w, req, fmt.Sprintf("/?nickname=%s", template.HTMLEscapeString(nickname)), http.StatusSeeOther);
 		return
 	}
 
@@ -97,7 +93,7 @@ func send(w http.ResponseWriter, req *http.Request) {
 		fmt.Println("Error SQLITE:", err)
 	}
 	fmt.Println("sql executed")
-	http.Redirect(w, req, fmt.Sprintf("/?nickname=%s", HtmlSpecialchars(nickname)), http.StatusSeeOther);
+	http.Redirect(w, req, fmt.Sprintf("/?nickname=%s", template.HTMLEscapeString(nickname)), http.StatusSeeOther);
 }
 
 func getMessages() []Msg {
