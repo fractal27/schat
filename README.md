@@ -1,12 +1,12 @@
 # sChat
 
-Simplest chat webapp you could make.
+Simplest chat webapp that looks good that you could make.
 
-- 1 .go file
-- 1 .css file
-- 1 .js file
-- 1 .sql file
-- 1 .html file
+- 1 .go file   ( 170 LOC )
+- 1 .css file  ( 138 LOC )
+- 1 .js file   ( 86 LOC )
+- 1 .sql file  ( 9 LOC )
+- 1 .html file ( 34 LOC )
 
 ## Getting started
 
