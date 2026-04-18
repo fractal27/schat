@@ -1,0 +1,38 @@
+.content {
+	flex: 1; /* Allows content to take up available space */
+	padding: 20px;
+}
+
+.bottom-nav {
+	background-color: #000; /* Dark background for the nav */
+	color: #8ff0a4; /* Text color */
+	position: fixed; /* Fixed position at the bottom */
+	bottom: 0; /* Align to the bottom */
+	left: 0; /* Align to the left */
+	right: 0; /* Align to the right */
+	padding: 5px 0; /* Padding for the nav */
+}
+
+.bottom-nav ul {
+	list-style: none; /* Remove bullet points */
+	display: flex; /* Flex layout for navigation items */
+	justify-content: space-around; /* Evenly distribute items */
+	margin: 0;
+	padding: 0;
+}
+
+.bottom-nav li {
+	flex: 1; /* Each item takes equal space */
+	text-align: center; /* Center text */
+}
+
+.bottom-nav a {
+	color: white; /* Link color */
+	text-decoration: none; /* Remove underline */
+	display: block; /* Make link area clickable */
+	padding: 1px; /* Padding around the links */
+}
+
+.bottom-nav a:hover {
+	background-color: #333; /* Change background on hover */
+}

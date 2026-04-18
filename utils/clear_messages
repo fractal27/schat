@@ -1,0 +1,5 @@
+#!/bin/sh
+
+sqlite3 chat.db << EOF
+DELETE FROM messages WHERE '1'='1';
+EOF

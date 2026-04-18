@@ -1,0 +1,5 @@
+#!/bin/sh
+
+sqlite3 chat.db << EOF
+SELECT * FROM messages;
+EOF

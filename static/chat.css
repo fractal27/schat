@@ -1,0 +1,138 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #313338;
+	color: #dbdee1;
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+	font-family: 'IosevkaTerm Nerd Font', sans-serif;
+	font-size: 1.5em;
+	overflow: hidden;
+}
+
+.chat-container {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.chat-display {
+	flex: 1;
+	overflow-y: auto;
+	padding: 20px 16px;
+	background: #313338;
+}
+
+.message {
+	display: flex;
+	gap: 16px;
+	margin-bottom: 16px;
+}
+
+.message-avatar {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #5865f2;
+	flex-shrink: 0;
+}
+
+.message-content {
+	flex: 1;
+	min-width: 0;
+}
+
+.message-header {
+	display: flex;
+	align-items: baseline;
+	gap: 8px;
+	margin-bottom: 4px;
+}
+
+.message-username {
+	color: #fff;
+	font-weight: 500;
+	font-size: 1rem;
+}
+
+.message-time {
+	color: #949ba4;
+	font-size: 0.75rem;
+}
+
+.message-text {
+	color: #dbdee1;
+	font-size: 0.9375rem;
+	line-height: 1.375rem;
+}
+
+.bottom-nav {
+	padding: 0 16px 24px 16px;
+	background: #313338;
+}
+
+.input-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.input-wrapper input#nickname {
+	width: 120px;
+	padding: 8px 12px;
+	border-radius: 4px;
+	border: none;
+	background: #1e1f22;
+	color: #dbdee1;
+	font-size: 14px;
+}
+
+.input-container {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	background: #383a3e;
+	border-radius: 8px;
+	padding: 0 16px;
+}
+
+.input-container textarea#text {
+	flex: 1;
+	background: transparent;
+	border: none;
+	color: #dbdee1;
+	font-size: 15px;
+	padding: 11px 0;
+	resize: none;
+	outline: none;
+	font-family: inherit;
+}
+
+.input-container textarea#text::placeholder {
+	color: #949ba4;
+}
+
+.input-container input#send {
+	padding: 8px 16px;
+	border-radius: 4px;
+	border: none;
+	background: #5865f2;
+	color: #fff;
+	font-size: 14px;
+	cursor: pointer;
+	font-weight: 500;
+	transition: background 0.2s;
+}
+
+.input-container input#send:hover {
+	background: #4752c4;
+}
+
+@font-face {
+	font-family: 'IosevkaTerm Nerd Font';
+	src: url('/static/IosevkaTermNerdFont-Regular.ttf');
+}
